@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.type-light {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.type-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.type-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.type-extra-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0a0909;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #D3D1D1;
+}
+
+/********HEADER************/
+header {
+  display: grid;
+  background-color: #49945E;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "logo buscar" "navegador navbotones";
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.buscar {
+  grid-area: buscar;
+  position: relative;
+  left: 17rem;
+}
+
+.buscar input {
+  width: 500px;
+}
+
+.navegador {
+  grid-area: navegador;
+  display: flex;
+}
+
+.navegador ul {
+  display: flex;
+  position: relative;
+  left: 33rem;
+}
+
+.navegador ul li {
+  margin: 0.9375rem;
+}
+
+.nav-botones {
+  grid-area: navbotones;
+  display: flex;
+  position: relative;
+  left: 55rem;
+}
+
+.nav-botones button {
+  background-color: #49945E;
+  border: none;
+  margin: 0 0.9375rem;
+}
+
+/********* Modal ***************/
+.sesion {
+  background-color: #323533;
+  color: black;
+  font-family: 400;
+}
+
+.sesion .boton-modal-ingresar {
+  background-color: #18943b;
+  border: none;
+}
+
+.sesion .boton-modal-cuenta {
+  background-color: #30f167;
+}
+
+/*********End Modal***************/
+/********END HEADER************/
+.banner-centro {
+  max-width: 100%;
+  margin: auto;
+}
+
+.banner-centro .banner {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  min-height: 400px;
+  background-image: url("../resource/arbol_banner_edited.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 20px;
+}
+
+.banner-centro .banner h3 {
+  font-size: 2rem;
+  color: #30f167;
+}
+
+.banner-centro .banner h3 p {
+  font-size: 0.5em;
+  color: #30f167;
+  margin-top: 5px;
+}
+
+.verMas {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.verMas a {
+  font-size: 15px;
+  color: #49945E;
+}
+
+.menu {
+  display: grid;
+  width: auto;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "ofertas" "descubrir";
+}
+
+.menu .ofertas {
+  grid-area: ofertas;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.menu .descubrir {
+  grid-area: descubrir;
+  width: 100%;
+}
+
+.menu .descubrir .descubrir-bloques {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.comprar-boton {
+  background-color: green;
+  border: none;
+}
+
+footer {
+  display: grid;
+  width: 100%;
+  background-color: white;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-areas: "boxNavegacion boxInformacion boxCuenta";
+}
+
+footer .boxNavegacion {
+  grid-area: boxNavegacion;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.125rem;
+}
+
+footer .boxNavegacion .footerNavegacion {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .boxNavegacion .footerNavegacion ul li {
+  color: black;
+  font-size: 400;
+}
+
+footer .boxInformacion {
+  grid-area: boxInformacion;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .boxInformacion .footerInformacion {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+}
+
+footer .boxInformacion .footerInformacion ul li {
+  color: black;
+  font-size: 400;
+}
+
+footer .boxCuenta {
+  grid-area: boxCuenta;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15.625rem;
+}
+
+footer .boxCuenta .footerMiCuenta {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .boxCuenta .footerMiCuenta ul li {
+  color: black;
+  font-size: 400;
+}

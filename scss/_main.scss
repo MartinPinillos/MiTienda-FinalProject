@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: $navegador;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: $fondo;
+}
+/********HEADER************/
+header{
+    display: grid;
+    background-color: $fondo-Header;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "logo buscar"
+    "navegador navbotones"
+    ;
+}
+.logo{
+    grid-area: logo;
+}
+.buscar{
+    grid-area: buscar;
+    position: relative;
+    left: 17rem;
+    input{
+        width: 500px;
+    }
+}
+.navegador{
+    grid-area:navegador;
+    display: flex;
+    ul{
+        display: flex;
+        position: relative;
+        left: 33rem;
+        li{
+            margin: 0.9375rem;
+        }
+    }
+}
+.nav-botones{
+    grid-area: navbotones;
+    display: flex;
+    position: relative;
+    left: 55rem;
+    button{
+        background-color: $fondo-Header;
+        border: none;
+        margin: 0 0.9375rem;
+    }
+}
+/********* Modal ***************/
+.sesion{
+    background-color: $fondo-Modal;
+    color: $texto-modal;
+    font-family: $font-regular;
+    .boton-modal-ingresar{
+        background-color: $boton-modal-ingresar;
+        border: none;
+    }
+    .boton-modal-cuenta{
+        background-color: $boton-modal-cuenta;
+    }
+}
+/*********End Modal***************/
+/********END HEADER************/
+.banner-centro{
+    max-width: 100%;
+    margin: auto;
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content:center;
+        min-height: 400px;
+        background-image: url('../resource/arbol_banner_edited.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        padding: 0 20px;
+        h3{
+            font-size: 2rem;
+            color: $texto-banner;
+            p{
+                font-size: 0.5em;
+                color: $texto-banner;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+.verMas{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+    margin-left: 20px;
+    a{
+        font-size: 15px;
+        color: $fondo-Header;
+    }
+}
+.menu{
+    display: grid;
+    width: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "ofertas"
+    "descubrir"
+    ;
+    .ofertas{
+        grid-area: ofertas;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .descubrir{
+        grid-area: descubrir;
+        width: 100%;
+        .descubrir-bloques{
+            display: flex;
+            margin-bottom: 50px;
+            justify-content: space-between;
+        }
+    }
+}
+.comprar-boton{
+    background-color: green;
+    border: none;
+}
+
+footer{
+    display: grid;
+    width: 100%;
+    background-color: $fondo-Footer;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-areas: 
+    "boxNavegacion boxInformacion boxCuenta"
+    ;
+    .boxNavegacion{
+        grid-area: boxNavegacion;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3.125rem;
+        .footerNavegacion{
+            display: flex;
+            flex-direction: row;
+            ul li{
+               color:$texto-footer; 
+               font-size:$font-regular;
+            }
+        }
+    }
+    .boxInformacion{
+        grid-area: boxInformacion;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footerInformacion{
+            display: flex;
+            flex-direction: row;
+            margin-left: 40px;
+            ul li{
+               color:$texto-footer; 
+               font-size:$font-regular;
+            }
+        }
+    }
+    .boxCuenta{
+        grid-area: boxCuenta;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15.625rem;
+        .footerMiCuenta{
+            display: flex;
+            flex-direction: row;
+            ul li{
+               color:$texto-footer; 
+               font-size:$font-regular;
+            }
+        }
+    }
+}
