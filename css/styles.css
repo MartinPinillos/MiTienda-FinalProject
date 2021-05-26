@@ -172,6 +172,9 @@ header {
     line-height: 60px;
     width: max-content;
   }
+  .descubrir-bloques {
+    flex-direction: column;
+  }
   footer {
     display: flex;
     flex-direction: column;

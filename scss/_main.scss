@@ -130,6 +130,9 @@ header{
             width: max-content;
         }
     }
+    .descubrir-bloques{
+        flex-direction: column;
+    }
     footer{
         display: flex;
         flex-direction: column;
@@ -334,7 +337,6 @@ footer{
     grid-template-areas: 
     "filtros productos"
     ;
-
     .filtros{
         grid-area: filtros;
         display: flex;
@@ -354,14 +356,11 @@ footer{
     ;
     .imagen-prod{
         grid-area: imagenProd;
-        
     }
     .descripcion-prod{
         grid-area: descripcionProd;
         position: relative;
         top: 20px;
-
-       
     }
 }
 .sugeridos{
