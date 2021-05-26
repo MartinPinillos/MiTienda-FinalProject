@@ -172,12 +172,19 @@ header {
     line-height: 60px;
     width: max-content;
   }
-  .descubrir-bloques {
-    flex-direction: column;
+  .descubrir {
+    visibility: hidden;
+  }
+  .verMas {
+    visibility: visible;
   }
   footer {
-    display: flex;
-    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .boxInformacion {
+    width: 100%;
+    margin-right: 50px;
   }
   .boxNavegacion {
     visibility: hidden;
@@ -283,6 +290,17 @@ header {
   border: none;
 }
 
+/********************Icono Ayuda *****************************/
+.iconoAyuda img {
+  position: fixed;
+  width: 100px;
+  height: 90px;
+  z-index: 2;
+  bottom: 5px;
+  right: 5px;
+}
+
+/*******************FOOTER************************/
 footer {
   display: grid;
   width: 100%;
