@@ -144,15 +144,40 @@ header{
         width: 100%;
         margin-right: 50px;
     }
-    .boxNavegacion{
-        visibility: hidden;
+    .categorias{
+        width: 100%;
+        p{
+            width:max-content;
+            margin: auto;
+        }
+        .card{
+            padding: 0 10px;
+        }
     }
-    .boxCuenta{
-        visibility: hidden;
+    .descripcion-prod-card{
+        margin-bottom:15px ;
+       h4{
+           font-size: 13px;
+       }
+       h5{
+           font-size: 15px;
+       }
+       p{
+           font-size: 13px;
+       }
+       a{
+           font-size: 10px;
+           margin: 5px 0;
+       }
     }
-    
+    .sugeridos-card{
+        p{
+            font-size: 11px;
+            width: 100%;
+            padding: auto;
+        }
+    }
 }
-
 /********* Modal ***************/
 .sesion{
     background-color: $fondo-Modal;
@@ -176,14 +201,16 @@ header{
         align-items: start;
         justify-content:center;
         min-height: 400px;
-        background-image: url('../resource/arbol_banner_edited.jpeg');
+        background-image: url('../resource/Banner-green-broches.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position:center;
         padding: 0 20px;
+        border-radius: 2px;
         h3{
             font-size: 2rem;
-            color: $texto-banner;
+            color: $primario;
+            align-items: stretch;
             p{
                 font-size: 0.5em;
                 color: $texto-banner;
@@ -252,6 +279,7 @@ footer{
     width: 100%;
     height: 150px;
     top: 0;
+    padding-top: 15px;
     background-color: $fondo-Footer;
     grid-template-columns: 29% 33.3% 29%;
     grid-template-areas: 
@@ -289,7 +317,7 @@ footer{
             ul li{
                color:$texto-footer; 
                font-size:$font-regular;
-               padding-left: 50px;
+               padding-right: 50px;
             }
         }
     }
@@ -386,5 +414,106 @@ footer{
         justify-content: center;
     }
 }
-
-
+/***********Contacto *******************/
+.contacto_form{
+    width: 450px;
+    margin:auto;
+    padding: 10px 20px;
+    background: rgb(136, 129, 129);
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    h2{
+        color: $primario;
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    input, textarea{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+        textarea{
+            min-height: 100px;
+            max-height: 100px;
+            max-width: 100%;
+        }
+    }
+}
+.contacto_titulo{
+    color: $primario;
+    margin: 0;
+    font-size: 30px;
+}
+#contacto_boton{
+    background: $boton-modal-ingresar;
+    color: $primario;
+    padding: 20px;
+    font-size: 20px;
+}
+#contacto__boton:hover{
+    cursor: pointer;
+    background: $boton-modal-background;
+}
+@media (max-width:480px){
+    .contacto__form{
+        width: 100%;
+    }
+}
+/********** Ayuda *****************/
+.centro-ayuda{
+    margin: 30px 30px;
+    height: 100%;
+    box-sizing: border-box;
+    background: rgb(136, 129, 129);
+    border-radius: 5px;
+    padding: 5px 5px;
+    a{
+        list-style: none;
+    }
+    a:hover{
+        color: $navegador;
+    }
+    .centro-ayuda-tab{
+        display: flex;
+        flex-direction: column;
+        .centro-ayuda-tab-card{
+            img{
+                width: 160px;
+                height: 140px;
+            }
+            h4{
+                padding: 5px 0;
+            }
+            span{
+                padding: 3px 0;
+            }
+            ol{
+                padding: 10px 15px;
+            }
+        }
+    }
+}
+/********** Vender *****************/
+.pagina-vender{
+    margin: 30px 30px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px 5px;
+    .card{
+        background-color: rgb(136, 129, 129);
+        .card-header{
+            text-align: center;
+        }
+        ul{
+            list-style:disc;
+            padding: 0 5px;
+        }
+    }
+}

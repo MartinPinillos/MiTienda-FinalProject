@@ -31,24 +31,24 @@
         <title>MiTienda</title>
       </head>
       <body>
-        <header>
-          <nav class="navegacion">
-            <a href="index.html" class="logo">MiTienda</a>
-            <button class="nav-toggle">
-              <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu">
-              <li class="nav-menu-item"><a href="categorias.html" class="nav-menu-link nav-link">Categorias</a></li>
-              <li class="nav-menu-item"><a href="ofertas.html" class="nav-menu-link nav-link">Ofertas</a></li>
-              <li class="nav-menu-item"><a href="vender.html" class="nav-menu-link nav-link">Vender</a></li>
-              <li class="nav-menu-item"><a href="ayuda.html" class="nav-menu-link nav-link">Ayuda</a></li>
-              <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
-            </ul>
-            <div class="nav-botones">
-              <button type="button" data-toggle="modal" data-target="#exampleModal"><img src="resource/login_icon_48x48.png" alt="LogIn"></button>
-              <button> <a href=""></a><img src="resource/carrito_icon_48x48.png" alt="Carrito"></button>
-            </div>
-          </nav>
+       <header>
+        <nav class="navegacion">
+          <a href="index.html" class="logo">MiTienda</a>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item"><a href="categorias.html" class="nav-menu-link nav-link">Categorias</a></li>
+            <li class="nav-menu-item"><a href="ofertas.html" class="nav-menu-link nav-link">Ofertas</a></li>
+            <li class="nav-menu-item"><a href="vender.html" class="nav-menu-link nav-link">Vender</a></li>
+            <li class="nav-menu-item"><a href="ayuda.html" class="nav-menu-link nav-link">Ayuda</a></li>
+            <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+          </ul>
+          <div class="nav-botones">
+            <button type="button" data-toggle="modal" data-target="#exampleModal"><img src="resource/login_icon_48x48.png" alt="LogIn"></button>
+            <button> <a href=""></a><img src="resource/carrito_icon_48x48.png" alt="Carrito"></button>
+          </div>
+        </nav>
         </header>
         <!---------- Modal --------------->
         <div class="row wow animate__bounceIn animate__slideInRight modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -85,44 +85,20 @@
           </div>
         </div>
         <!----------END Modal --------------->
-        <main class="pagina-vender">
-          <div class="card">
-            <div class="card-header">
-              <h2>Vendé tu ropa</h2>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Para vender tu ropa es solo con cinta previa. Podés solicitar un turno a través del boton de Whatsapp enviando las fotos para la preseleccion. Por favor, leé con atención la siguiente información antes de solicitar un turno.</h5>
-              <ul class="card-text">
-                <li>Todos los articulos son en consignacion, es decir que al no venderse se procede a la devolucion de la misma </li>
-                <li>Realizamos la primera pre selección de fotos por WhatsApp. </li>
-                <li>Ambos requisitos son excluyentes.</li>
-              </ul>
-              <h5 class="card-title">Criterios de Seleccion</h5>
-              <p>Rebibimos prendas, calzados y carteras de hombre y mujer:</p>
-              <ul>
-                <li>En excelente estado, sin manchas, peeling ni roturas.</li>
-                <li>Recién lavada y planchada </li>
-                <li>De la temporada en curso (Primavera/Verano – Otoño/Invierno)</li>
-                <li>De moda actual, estilo y cortes que se usen. Puede ser ropa deportiva también</li>
-                <li>De marcas reconocidas. Trabajamos tanto marcas nacionales como importadas</li>
-              </ul>
-              <h5 class="card-title">Modalidad de venta</h5>
-              <p>Dejá tus prendas pre seleccionadas previamente por Whatsapp en valija/bolso en el local en consignacion</p>
-              <p>Una vez vendidas se habilitara un credito para ser retirado con fecha pactada, o como bonificacion para algunas de nuestros articulos</p>
-              <p>Articulo que no sea vendido y se venza el plazo de venta (60 dias) se procedera a la devolucion, que debera ser retirado presencialmente en el local</p>
-              <h5 class="card-title">¿Quien determina el valor del producto?</h5>
-              <p>Nosotros somos quienes ponemos el valor al producto, depende mucho de la marcas, estado y valor actual de la ropa.</p>
-              <h5 class="card-title">¿Que productos no aceptamos?</h5>
-              <ul>
-                <li>Ropa con mucho uso o en mal estado</li>
-                <li>Prendas Vintage o de epoca</li>
-                <li>Ropa no lavada</li>
-                <li>Ropa interior</li>
-              </ul>
-            </div>
+        <!----------Main Contacto --------------->
+        <main>
+          <div>
+            <form action="" class="contacto_form">
+              <h2 class="contacto_titulo">Contacto</h2>
+              <input type="text" name="Nombre" placeholder="Nombre">
+              <input type="text" name="correo" placeholder="Correo">
+              <input type="text" name="telefono" placeholder="Telefono">
+              <textarea name="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+              <input type="button" value="Enviar" id="contacto_boton">
+            </form>
           </div>
         </main>
-        <!----------Icono de Ayuda----------->
+        <!----------Atajo de Whatsapp----------->
         <div class="iconoAyuda"> <a href="https://www.whatsapp.com/?lang=es"><img src="resource/iconoWhasapp.png" alt="iconoAyuda"> </a></div>
         <div class="clear"></div>
         <script src="js/wow.js" ></script>
